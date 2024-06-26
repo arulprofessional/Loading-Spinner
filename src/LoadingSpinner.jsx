@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function LoadingSpinner() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,9 +18,6 @@ export default function LoadingSpinner() {
 
   return (
     <>
-      <nav>
-        <Link to="/">Refresh</Link>
-      </nav>
       {content}
     </>
   );
